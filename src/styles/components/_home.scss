@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: url(https://images.unsplash.com/photo-1580094333632-438bdc04f79f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    &__title{
+        background-color: rgba(128, 128, 128, 0.5);
+        padding: rem(10px);
+        border-radius: rem(5px);
+        justify-self: center;
+        font-size: 3rem;
+
+    }
+    &__description{
+        background-color: rgba(128, 128, 128, 0.5);
+        padding: rem(10px);
+        border-radius: rem(5px);
+        max-width: rem(500px);
+        padding-bottom: rem(5px);
+    }
+}

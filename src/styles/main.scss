@@ -1,0 +1,22 @@
+// ABSTRACT
+@import "./abstracts/variables.scss";
+@import "./abstracts/functions";
+
+// BASE
+@import "./base/reset";
+@import "./base/body";
+
+// COMPONENTS
+@import "./components/navbar";
+@import "./components/home";
+@import "./components/headings";
+@import "./components/image";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/main";
+@import "./components/aside";
+@import "./components/park-list";
+@import "./components/park";
+@import "./components/nav-btn";
+@import "./components/things-to-do";
+@import "./components/to-do-card";

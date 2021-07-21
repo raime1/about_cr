@@ -1,0 +1,47 @@
+@use "../abstracts/breakpoints" as media;
+
+.to-do-card {
+    position: relative;
+	min-width: rem(150px);
+	min-height: rem(150px);
+
+    @include media.query(">=sm"){
+        width: rem(200px);
+	    height: rem(200px);
+    };
+
+    @include media.query(">=md"){
+        width: rem(250px);
+	    height: rem(250px);
+    };
+
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    };
+
+    &__header {
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+		right: 0;
+		background: green;
+		color: white;
+		margin-bottom: 0.5rem;
+		-webkit-transition: visibility 0s, opacity 0.5s linear;
+		transition: visibility 0s, opacity 0.5s linear;
+		min-width: rem(150px);
+		visibility: visible;
+		opacity: 0.8;
+
+        @include media.query(">=sm"){
+            width: rem(200px);
+        };
+    
+        @include media.query(">=md"){
+            width: rem(250px);
+        };
+
+	};
+}

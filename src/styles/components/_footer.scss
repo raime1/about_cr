@@ -1,0 +1,45 @@
+@use "../abstracts/breakpoints" as media;
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+
+    &__author::before {
+        content: "\00a9";
+    }
+
+}
+.on-this-site{
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        @include media.query(">=sm"){
+            flex-direction: row;    
+            justify-content: space-evenly;
+        }
+    }
+
+    &__item .nav-btn{
+        text-align: center;
+        
+        &:-webkit-any-link {
+            color: white;
+        }
+
+        &:focus {
+            outline: white solid rem(2px);
+            border-radius: rem(10px);
+        }
+
+        @include media.query(">=sm"){
+        }
+    }
+}

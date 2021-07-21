@@ -1,0 +1,16 @@
+.nav-btn {
+    margin: rem(10px);
+
+    &:-webkit-any-link {
+		text-decoration: none;
+	}
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &:focus {
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/breakpoints" as media;
+
+.things-to-do {
+
+    &__list {
+        display: grid;
+        gap: 1rem 0.5rem;
+
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
+        @include media.query(">=sm") {
+            grid-template-columns: repeat(3, 33%);
+        };
+
+        @include media.query(">=md") {
+            grid-template-columns: repeat(4, 25%);
+        }
+        
+    }
+
+    
+}

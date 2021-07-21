@@ -1,0 +1,35 @@
+@use "../abstracts/breakpoints" as media;
+
+.navbar {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__nav{
+
+        @include media.query(">=sm") {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.nav__item .nav-btn {
+    font-size: 2rem;
+    text-align: center;
+    
+    &:-webkit-any-link {
+        color: green;
+	}
+
+    &:focus {
+        outline: rgb(65, 180, 65) solid rem(3px);
+        border-radius: rem(10px);
+    }
+
+    @include media.query(">=sm"){
+        font-size: 1.5rem;
+    }
+}
